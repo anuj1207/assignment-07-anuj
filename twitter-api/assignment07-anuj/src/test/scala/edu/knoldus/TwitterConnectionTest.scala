@@ -11,7 +11,7 @@ class TwitterConnectionTest extends FlatSpec{
     assert(twitterFeeds.getObject("").isEmpty)
   }
 
-  it should "return non empty list for correct input" in{
+  it should "return non empty for correct input" in{
     assert(twitterFeeds.getObject("config").nonEmpty)
   }
 
