@@ -111,7 +111,7 @@ class TwitterOps(confFile: String) {
             val feedsListSize = tweetsList.size
             val retweetsList = tweetsList.map(_.getRetweetCount)
             val favList = tweetsList.map(_.getFavoriteCount)
-            (retweetsList.size / feedsListSize, favList.size / feedsListSize)
+            (retweetsList.sum / feedsListSize, favList.sum / feedsListSize)
 
           case _ => (0, 0)
         }
