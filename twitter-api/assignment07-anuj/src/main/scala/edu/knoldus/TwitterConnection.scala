@@ -31,7 +31,7 @@ class TwitterConnection {
       Some(twitter)
 
     } catch {
-      case ex: Exception => None /*List[Status]()*/
+      case ex: Exception => None 
     }
   }
 
